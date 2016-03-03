@@ -1896,14 +1896,35 @@
         </div>
     </div>
     
-    <div class="tag-play-music">
+    <div class="tag-playmusic">
         <audio id="myTune" controls>
             <source src="./music/a.mp3">
         </audio>
-        <div style="margin-bottom: 20px;">
-            <button id="playButton" onclick="document.getElementById('myTune').play()">Play Music</button>
-            <button id="pauseButton" onclick="document.getElementById('myTune').pause()">Pause Music</button>
-            <button id="stopButton" onclick="document.getElementById('myTune').pause(); document.getElementById('myTune').currentTime = 0;">Stop Music</button>
+        
+        <div class="playmusic-info">
+              <img src="./img/hot-remix/bastards.jpg" alt="">
+              <div>
+                  <a href="#" class="playmusic-name">Clarity</a>
+                  <a href="#" class="playmusic-artist">Hayley Williams ft Zedd</a>
+              </div>
+        </div>
+        <div class="playmusic-control">
+            <label id="playmusic-start">0:00</label>
+            <progress id="playmusic-process" value="22" max="100"></progress>
+            <label id="playmusic-end">3:54</label>
+            <button id="playmusic-prev">
+                <i class="glyphicon glyphicon-backward"></i>
+            </button>
+            <button id="playButton">
+                <i class="glyphicon glyphicon-play"></i>
+                <i class="glyphicon glyphicon-pause"></i>
+            </button>
+            <button id="playmusic-next">
+                <i class="glyphicon glyphicon-forward"></i>
+            </button>
+            <button id="loopButton">
+                <i class="glyphicon glyphicon-repeat"></i>
+            </button>  
         </div>
     </div>
 

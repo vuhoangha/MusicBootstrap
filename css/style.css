@@ -952,6 +952,7 @@ header .collapse {
     padding: 1em 7em;
     border-top: 1px solid #333;
     background: #373737;
+    margin-bottom: 70px;
 }
 
 #footerPage .col-sm-12,.footerPage .col-sm-3,.footerPage .col-sm-2{
@@ -1097,3 +1098,126 @@ header .collapse {
 }
 
 /* end footer */
+
+/* Audio */
+
+#myTune{
+    display: none;
+}
+
+.tag-playmusic{
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999999998;
+    background: #000;
+}
+
+.playmusic-info{
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    float: left;
+    margin-right: 1%;
+}
+
+.playmusic-info img{
+    height: 100%;
+    display: inline-block;
+}
+
+.playmusic-info div{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.playmusic-info div a{
+    display: block;
+    margin-bottom: 5px;
+}
+
+#playButton .glyphicon-pause{
+    display: none;
+}
+
+.playmusic-control{
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    width: 74%;
+    float: left;
+    margin: 0;
+}
+
+#playmusic-start{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 25px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+#playmusic-process{
+    height: 5px;
+    border:1px solid #a00;
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    margin-top: 33px;
+}
+
+#playmusic-end{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+#playButton, #pauseButton, #loopButton,#playmusic-prev,#playmusic-next{
+    border: 0;
+    font-size: 100%;
+    padding: 2px 5px;
+    background: transparent;
+    color: #888;
+    margin-top: 23px;
+    vertical-align: top;
+    outline: none;
+}
+
+#playButton, #pauseButton{
+    font-size: 180%;
+    color: #fff;
+    margin-top: 14px;
+}
+
+#playButton, #pauseButton,#playmusic-prev,#playmusic-next{
+    margin-left: 20px;
+}
+
+#loopButton{
+    margin-left: 25px;
+}
+
+#playmusic-process::-webkit-progress-bar{
+    background: #eee;
+}
+
+#playmusic-process::-webkit-progress-value{
+    background: #b00;
+}
+
+
+
+
+
+
+
+
+

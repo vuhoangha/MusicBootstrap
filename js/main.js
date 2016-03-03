@@ -1,17 +1,17 @@
 $(document).ready(function () {
     $("#login-button").click(function () {
         $("#login-form").show();
-    })
+    });
 
     $("#button-me-cancel").click(function () {
         $("#login-form").hide();
-    })
+    });
 });
 
 $(document).ready(function () {
-    var displaygenres = 0;
+    var displaygenres=0;
     $("#genres-button").click(function () {
-        if (displaygenres == 0) {
+        if (displaygenres==0) {
             $("#genres-detail").show();
             $(this).css("background", "#eee");
             displaygenres = 1;
@@ -137,13 +137,63 @@ $(document).ready(function () {
     });
 });
 
-//scroll mouse show/hide header/menu
-//$(document).ready(function () {
-//    $(window).scroll(function () {
-//        if ($(this).scrollTop() >= 150) {
-//            $("header").show();
-//        } else {
-//            $("header").hide();
-//        }
-//    });
-//});
+$(document).ready(function () {
+    var playmusic = 0;
+    var audio = document.getElementById("myTune");
+    
+    //event end audio
+    audio.onended = function(){
+        if(audio.loop==false){
+            PauseMusic();
+        }
+    };
+    
+    //function play music
+    function PlayMusic() {
+        audio.play();
+        playmusic = 1;
+        $("#playButton .glyphicon-play").hide();
+        $("#playButton .glyphicon-pause").show();
+    }
+    
+    //function pause music
+    function PauseMusic() {
+        audio.pause();
+        playmusic = 0;
+        $("#playButton .glyphicon-pause").hide();
+        $("#playButton .glyphicon-play").show();
+    }
+
+    //event click loop
+    $("#loopButton").click(function () {
+        if (audio.loop == false) {
+            if (playmusic == 0) {
+                PlayMusic();
+            }
+            audio.loop = true;
+            $("#loopButton").css("color", "#fff");
+        } else {
+            audio.loop = false;
+            $("#loopButton").css("color", "#888");
+        }
+
+    });
+    
+    //event click playmusic
+    $("#playButton").click(function () {
+        if (playmusic == 0) {
+            PlayMusic();
+        } else {
+            PauseMusic();
+        }
+    });
+    
+    intervalID = setInterval(function () {
+        sliderNext();
+    }, 3000);
+
+    $(".slider-img").on("mouseover", function () {
+        clearInterval(intervalID);
+    });
+    
+});
