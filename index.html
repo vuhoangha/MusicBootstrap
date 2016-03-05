@@ -1908,10 +1908,12 @@
                   <a href="#" class="playmusic-artist">Hayley Williams ft Zedd</a>
               </div>
         </div>
-        <div class="playmusic-control">
-            <label id="playmusic-start">0:00</label>
-            <progress id="playmusic-process" value="22" max="100"></progress>
-            <label id="playmusic-end">3:54</label>
+        <div class="playmusic-time">
+            <label id="playmusic-start"></label>
+            <progress id="playmusic-process" value="0" max="100"></progress>
+            <label id="playmusic-end"></label>
+        </div>
+        <div class="playmusic-button">
             <button id="playmusic-prev">
                 <i class="glyphicon glyphicon-backward"></i>
             </button>
@@ -1924,7 +1926,15 @@
             </button>
             <button id="loopButton">
                 <i class="glyphicon glyphicon-repeat"></i>
-            </button>  
+            </button>
+            <div id="volume">
+                <button id="volumeButton">
+                    <i class="glyphicon glyphicon-volume-down"></i>
+                    <i class="glyphicon glyphicon-volume-up"></i>
+                    <i class="glyphicon glyphicon-volume-off"></i>
+                </button>
+                <progress id="volumeProBar" value="100" max="100"></progress>
+            </div>  
         </div>
     </div>
 
