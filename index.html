@@ -48,30 +48,74 @@
             </div>
         </nav>
     </header>
+    
     <div id="login-form">
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 col-sm-offset-4">
-                    <h1>Login</h1>
-                    <form>
-                        <label for="email-form">Email</label>
+                    <div class="login-title">
+                        <h1>Login</h1>
+                    </div>
+                       <form>
                         <input type="email" placeholder="Email" class="form-element" id="email-form">
-                        <label for="password-form">Password</label>
                         <input type="password" placeholder="Password" class="form-element" id="password-form">
-                        <input type="checkbox" id="remember-me" value="Forget password">
-                        <label for="remember-me">Remember me</label>
-                        <br>
+                        <div class="remember-user">
+                            <input type="checkbox" id="remember-me" value="Forget password">
+                            <label for="remember-me">Remember me</label>
+                        </div>
+                        
                         <div class="login-form-button-group">
                             <input type="button" id="button-me-login" class="button-me" value="Login">
                             <input type="button" id="button-me-cancel" class="button-me" value="Cancel">
                         </div>
 
-                        <p><a href="#">Fogotten Password</a></p>
+                        <p id="fogotten-password"><a href="#">Fogotten Password</a></p>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    
+    <div class="register-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-4">
+                    <h1>Register</h1>
+                    <div id="register-form-name">
+                        <input type="text" id="register-firstname" placeholder="First Name*">
+                        <input type="text" id="register-lastname" placeholder="Last Name*">
+                    </div>
+                    <div id="register-form-email">
+                        <input type="email" id="register-email" placeholder="Email*">
+                        <i class="glyphicon glyphicon-ok"></i>
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                    </div>
+                    <div id="register-form-password">
+                        <input type="password" id="register-password" placeholder="Password*">
+                        <i class="glyphicon glyphicon-ok"></i>
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                    </div>
+                    <div id="register-form-confirm-password">
+                        <input type="password" id="register-confirm-password" placeholder="Confirm Password*">
+                        <i class="glyphicon glyphicon-ok"></i>
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                    </div>
+                    <div id="register-form-terms">
+                        <input type="checkbox" id="register">
+                        <span>You agree on our </span>
+                        <a href="#">terms and condition</a>
+                    </div>
+                    <div id="register-form-button">
+                        <button id="register-form-button-register">Register</button>
+                        <button id="register-form-button-cancel">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="extra"></div>
+    
     <div id="menu">
         <div class="container">
             <div class="row">
@@ -100,6 +144,7 @@
             </div>
         </div>
     </div>
+
     <div id="genres-wrap">
         <div class="container">
             <div class="col-sm-12">
@@ -1902,8 +1947,10 @@
         </audio>
         
         <div class="playmusic-info">
-              <img src="./img/hot-remix/bastards.jpg" alt="">
-              <div>
+              <div class="imgPlayMusic">
+                  <img src="./img/hot-remix/bastards.jpg" alt="">
+              </div>
+              <div class="textPlayMusic">
                   <a href="#" class="playmusic-name">Clarity</a>
                   <a href="#" class="playmusic-artist">Hayley Williams ft Zedd</a>
               </div>

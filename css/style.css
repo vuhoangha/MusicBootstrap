@@ -75,49 +75,101 @@ header .collapse {
 }
 
 #login-form {
-    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 999999999;
     width: 100%;
     height: 100%;
-    background: #111;
-    opacity: 0.95;
     color: #eee;
     display: none;
-    position: absolute;
 }
 
 #login-form .col-sm-4 {
-    background: #000;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border: 0;
+    padding: 20px 0;
+    border-radius: 10px;
 }
 
-.form-element {
+.login-title{
+    width: 100%;
+    display: block;
+    border-left: 5px solid #ed2552;
+}
+
+#login-form h1{
+    text-align: left;
+    border: 0;
+    width: 80%;
+    color: #ed2552;
+    margin: 0 auto;
+}
+
+.form-element{
     display: block;
     height: 35px;
-    width: 100%;
+    width: 80%;
     border: none;
     padding: 6px 12px;
-    border-radius: 4px;
     color: #000;
+    border-bottom: 2px solid #ddd;
+    outline: none;
+}
+
+.form-element::-webkit-input-placeholder{
+    color: #ccc;
+}
+
+.form-element:focus{
+    border-bottom: 2px solid #ed2552;
 }
 
 #email-form {
-    margin: 5px 0;
+    margin: 50px auto 0 auto;
 }
 
 #password-form {
-    margin: 5px 0;
+    margin: 50px auto 0 auto;
+}
+
+.remember-user{
+    display: block;
+    width: 80%;
+    margin: 30px auto 0 auto;
+}
+
+.remember-user label{
+    color: #aaa;
+    font-size: 90%;
+}
+
+.login-form-button-group {
+    margin: 30px auto 0 auto;
+    text-align: center;
+    height: 35px;
 }
 
 .button-me {
-    color: #111;
+    color: #666;
     height: 35px;
     width: 80px;
     border: none;
     border-radius: 4px;
+    width: 20%;
+    margin: 0 1%;
+    height: 100%;
 }
 
-.login-form-button-group {
-    text-align: right;
+.button-me:hover{
+    transition: all 0.2s;
+    width: 25%;
+    height: 150%;
+    margin: 0;
 }
 
 #button-me-login {
@@ -128,6 +180,18 @@ header .collapse {
     display: inline-block;
 }
 
+#fogotten-password{
+    margin: 30px auto 0 auto;
+    text-align: center;
+}
+
+#fogotten-password a{
+    text-decoration: none;
+}
+
+#fogotten-password a:hover{
+    color: #0cc;
+}
 
 /*_____menu_____*/
 
@@ -1107,11 +1171,9 @@ header .collapse {
 .tag-playmusic{
     height: 70px;
     width: 100%;
-/*
     position: fixed;
     bottom: 0;
     left: 0;
-*/
     z-index: 999999998;
     background: #111;
 }
@@ -1125,21 +1187,40 @@ header .collapse {
     margin-right: 1%;
 }
 
+.imgPlayMusic{
+    display: inline-block;
+    width: 39%;
+    float: left;
+    overflow: hidden;
+    height: 100%;
+    margin-right: 1%;
+    text-align: right;
+}
+
 .playmusic-info img{
     height: 100%;
     display: inline-block;
 }
 
-.playmusic-info div{
+.playmusic-info .textPlayMusic{
     display: inline-block;
     vertical-align: top;
     margin-top: 10px;
-    margin-left: 5px;
+    width: 60%;
+    float: left;
 }
 
-.playmusic-info div a{
+.playmusic-info .textPlayMusic a{
     display: block;
     margin-bottom: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #44aabb;
+}
+
+.playmusic-info .textPlayMusic a:hover{
+    color: #aacccc;
 }
 
 #playButton .glyphicon-pause{
@@ -1287,10 +1368,208 @@ header .collapse {
     background: #fff;
 }
 
-/* screen 320 */
-@media screen and (max-width:400px){
-    
+/* End Audio */
+
+/* Register Form */
+
+.register-form{
+    color: #eee;
+    background: #transparent;
+    height: 100%;
+    position: fixed;
+    z-index: 999999999;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
 }
+
+.extra{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999999998;
+    background: #000;
+    opacity: 0.5;
+    display: none;
+}
+
+.register-form .col-sm-4{
+    border-radius: 10px;
+    background: #22323A;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+}
+
+.register-form h1{
+    text-align: center;
+}
+
+.register-form input{
+    padding: 8px 10px;
+    background: transparent;
+    border: 1px solid #448888;
+}
+
+.register-form input::-webkit-input-placeholder{
+    color: #666 !important;
+}
+
+#register-form-name{
+    width: 100%;
+    display: block;
+    margin-top: 30px;
+    border: 0;
+}
+
+#register-firstname{
+    display: inline-block;
+    width: 45%;
+    float: left;
+}
+
+#register-lastname{
+    display: inline-block;
+    width: 45%;
+    float: right;
+}
+
+#register-form-email{
+    margin-top: 30px;
+    display: inline-block;
+    width: 100%;
+}
+
+#register-email{
+    display: inline-block;
+    width: 89%;
+    float: left;
+    margin-right: 1%;
+}
+
+#register-form-email .glyphicon-ok{
+    display: none;
+    color: #00dd00;
+}
+
+#register-form-email .glyphicon-warning-sign{
+    color: #dd0000;
+}
+
+#register-form-email i{
+    display: block;
+    float: left;
+    width: 10%;
+    text-align:center;
+    vertical-align: top;
+    margin-top: 10px;
+    font-size: 120%;
+}
+
+#register-form-password{
+    margin-top: 30px;
+    display: inline-block;
+    width: 100%;
+}
+
+#register-password{
+    display: inline-block;
+    width: 89%;
+    float: left;
+    margin-right: 1%;
+}
+
+#register-form-password .glyphicon-ok{
+    color: #00dd00;
+}
+
+#register-form-password .glyphicon-warning-sign{
+    display: none;
+    color: #dd0000;
+}
+
+#register-form-password i{
+    display: block;
+    float: left;
+    width: 10%;
+    text-align:center;
+    vertical-align: top;
+    margin-top: 10px;
+    font-size: 120%;
+}
+
+#register-form-confirm-password{
+    margin-top: 30px;
+    display: inline-block;
+    width: 100%;
+}
+
+#register-confirm-password{
+    display: inline-block;
+    width: 89%;
+    float: left;
+    margin-right: 1%;
+}
+
+#register-form-confirm-password .glyphicon-ok{
+    color: #00dd00;
+}
+
+#register-form-confirm-password .glyphicon-warning-sign{
+    display: none;
+    color: #dd0000;
+}
+
+#register-form-confirm-password i{
+    display: inline-block;
+    float: left;
+    width: 10%;
+    text-align:center;
+    vertical-align: top;
+    margin-top: 10px;
+    font-size: 120%;
+}
+
+#register-form-terms{
+    margin-top: 30px;
+}
+
+#register-form-button{
+    margin-top: 30px;
+    text-align: center;
+    height: 40px;
+    color: #000;
+}
+
+#register-form-button button{
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+    color: #fff;
+    background: #006868;
+    border: 0;
+}
+
+#register-form-button button:hover{
+    width: 36%;
+    transition: all .2s;
+    margin: 0;
+    height: 120%;
+}
+
+#register-form-button-register{
+    margin-right: 3%;
+}
+
+#register-form-button-cancel{
+    margin-left: 3%;
+}
+/* end Register form */
+
 
 
 

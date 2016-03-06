@@ -1,10 +1,14 @@
+
+
 $(document).ready(function () {
     $("#login-button").click(function () {
         $("#login-form").show();
+        $(".extra").show();
     });
 
     $("#button-me-cancel").click(function () {
         $("#login-form").hide();
+        $(".extra").hide();
     });
 });
 
@@ -57,16 +61,18 @@ $(document).ready(function () {
         $(".slider-li").eq(stt).addClass('slider-li-active');
     }
 
-    intervalID = setInterval(function () {
+    var intervalSlider;
+    intervalSlider = setInterval(function () {
         sliderNext();
     }, 3000);
 
     $(".slider-img").on("mouseover", function () {
-        clearInterval(intervalID);
+        clearInterval(intervalSlider);
     });
 
     $(".slider-img").on("mouseout", function () {
-        intervalID = setInterval(function () {
+        
+        intervalSlider = setInterval(function () {
             sliderNext();
         }, 3000);
     });
@@ -210,24 +216,26 @@ $(document).ready(function () {
 
     });
 
+    var intervalPlayMusic;
     //event click playmusic
     $("#playButton").click(function () {
         if (playmusic == 0) {
             PlayMusic();
-            intervalID = setInterval(function () {
+            intervalPlayMusic = setInterval(function () {
                 document.getElementById("playmusic-start").innerHTML = ConvertTime(parseInt(audio.currentTime));
                 currentValuePlayMusic = (audio.currentTime / audio.duration) * 100;
                 document.getElementById("playmusic-process").value = currentValuePlayMusic;
             }, 100);
         } else {
             PauseMusic();
-            clearInterval(intervalID);
+            clearInterval(intervalPlayMusic);
         }
     });
 
     //event click fast forward music
-    var PlaymusicLenPer = $("#playmusic-process").width() / 100;
+    var PlaymusicLenPer;
     $("#playmusic-process").click(function (ev) {
+        PlaymusicLenPer = $("#playmusic-process").width() / 100;
         var lenCurrent_playMusic = ev.clientX - $("#playmusic-process").offset().left;
         var Playmusic_currentPer = lenCurrent_playMusic / PlaymusicLenPer;
 
@@ -235,9 +243,11 @@ $(document).ready(function () {
         document.getElementById("myTune").currentTime = (Playmusic_currentPer / 100) * audio.duration;
         document.getElementById("playmusic-start").innerHTML = ConvertTime(audio.currentTime);
     });
-
-    var volumeLenPer = $("#volumeProBar").width() / 100;
+    
+    //volume in progress
+    var volumeLenPer;
     $("#volumeProBar").click(function (ev_volume) {
+        volumeLenPer = $("#volumeProBar").width() / 100;
         var lenCurrent_volume = ev_volume.clientX - $("#volumeProBar").offset().left;
         document.getElementById("volumeProBar").value = lenCurrent_volume / volumeLenPer;
         document.getElementById("myTune").volume = document.getElementById("volumeProBar").value / 100;
@@ -250,6 +260,7 @@ $(document).ready(function () {
         }
     });
 
+    //volume in icon
     var oldVolume;
     var oldVolumeLength;
     $("#volumeButton").click(function () {
@@ -270,7 +281,27 @@ $(document).ready(function () {
                 $("#volume .glyphicon-volume-up").show();
             }
         }
+        
     });
 
 
 });
+
+
+$(document).ready(function(){
+    $("#register-button").click(function(){
+        $(".register-form").show();
+        $(".extra").show();
+    });
+    $("#register-form-button-cancel").click(function(){
+        $(".register-form").hide();
+        $(".extra").hide();
+    });
+});
+
+
+
+
+
+
+
