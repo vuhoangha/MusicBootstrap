@@ -196,8 +196,8 @@ $(document).ready(function(){
     function DisplayLessString_DetailSong(){
         var lenDescripSongDetail = 0;
         lenDescripSongDetail = $("#descrip-detail").text().length;
-        if(lenDescripSongDetail > 40){
-            $("#descrip-detail").text($("#descrip-detail").text().substr(0,350)+'...');
+        if(lenDescripSongDetail > 20){
+            $("#descrip-detail").text($("#descrip-detail").text().substr(0,250)+'...');
         }
     }
     
@@ -229,17 +229,6 @@ $(document).ready(function(){
         $(this).find(".detail-song-track-total-col-cost button").css("background-color","rgba(240,70,110,0.5)");
     });
 
-});
-    
-//more song artist
-$(document).ready(function () {
-    $(".more-song-artist-pages-li").on("click", function () {
-        var stt = $(this).attr("stt");
-        $(".more-song-artist-detail").hide();
-        $(".more-song-artist-detail").eq(stt).show();
-        $(".more-song-artist-pages-li").removeClass('more-song-artist-pages-li-active');
-        $(".more-song-artist-pages-li").eq(stt).addClass('more-song-artist-pages-li-active');
-    });
 });
 
 //more song label

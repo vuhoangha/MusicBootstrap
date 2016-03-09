@@ -999,6 +999,43 @@ a.labels {
     cursor: pointer;
 }
 
+.detail-artist-follow{
+    background: transparent;
+    margin-top: 20px;
+}
+
+.detail-artist-follow p{
+    display: inline-block;
+    height: 30px;
+    vertical-align: top;
+    line-height: 30px;
+    padding-bottom: 6px;
+    width: 80px;
+    text-align: center;
+    border: 2px solid #22dd22;
+    color: #22dd22;
+}
+
+.detail-artist-fb{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: #333;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+}
+
+.detail-artist-tw{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: #333;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+}
+
 
 /* end content detail */
 
@@ -1180,20 +1217,6 @@ a.labels {
     padding-right: 10px;
 }
 
-.more-song-artist-detail .col-sm-2 p{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    margin-right: 10px;
-    overflow: hidden;
-    white-space: nowrap;
-    background: #000;
-    padding-right: 10px;
-    opacity: 0.8;
-}
-
 .more-song-artist-detail{
     display: none;
 }
@@ -1227,7 +1250,13 @@ a.labels {
 
 .more-song-artist-artist a{
     color: #22ccee;
-    font-size: 80%;
+    font-size: 90%;
+    text-decoration: none;
+}
+
+.more-song-artist-artist span{
+    color: #555;
+    font-size: 90%;
     text-decoration: none;
 }
 
@@ -1237,7 +1266,7 @@ a.labels {
 
 .more-song-artist-label a{
     color: #888;
-    font-size: 80%;
+    font-size: 90%;
     text-decoration: none;
 }
 
@@ -1340,7 +1369,7 @@ a.labels {
 
 .more-song-label-artist a{
     color: #22ccee;
-    font-size: 80%;
+    font-size: 90%;
     text-decoration: none;
 }
 
@@ -1350,7 +1379,7 @@ a.labels {
 
 .more-song-label-label a{
     color: #888;
-    font-size: 80%;
+    font-size: 90%;
     text-decoration: none;
 }
 
@@ -1385,20 +1414,6 @@ a.labels {
 .more-song-label-pages-li-active {
     background: #fff;
 }
-
-
-/* start */
-
-.label-genres p{
-    display: inline-block;
-}
-
-.label-genres a{
-    text-decoration: none;
-    color: #eee;
-}
-
-/* end start */
 
 
 

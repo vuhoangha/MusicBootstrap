@@ -196,8 +196,8 @@ $(document).ready(function(){
     function DisplayLessString_DetailSong(){
         var lenDescripSongDetail = 0;
         lenDescripSongDetail = $("#descrip-detail").text().length;
-        if(lenDescripSongDetail > 40){
-            $("#descrip-detail").text($("#descrip-detail").text().substr(0,350)+'...');
+        if(lenDescripSongDetail > 20){
+            $("#descrip-detail").text($("#descrip-detail").text().substr(0,450)+'...');
         }
     }
     

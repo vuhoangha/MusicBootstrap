@@ -1169,48 +1169,40 @@ a.labels {
     display: inline-block;
 }
 
-.more-song-artist-detail .col-sm-12 {
-    padding: 0;
-    margin: 0;
+/* end more this from artist */
+
+/* artist */
+
+.search-artist{
+    display: inline-block;
+    width: 100%;
+}
+
+.search-artist .col-sm-12{
+    display: inline-block;
+    width: 100%;
+}
+
+.search-artist .col-sm-2{
     display: inline-block;
 }
 
-.more-song-artist-detail .col-sm-2 {
-    padding: 0;
-    padding-right: 10px;
+.search-artist-detail{
+    display: inline-block;
+    background: #2f2f2f;
 }
 
-.more-song-artist-detail .col-sm-2 p{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    margin-right: 10px;
-    overflow: hidden;
-    white-space: nowrap;
-    background: #000;
-    padding-right: 10px;
-    opacity: 0.8;
-}
-
-.more-song-artist-detail{
-    display: none;
-}
-
-.more-song-artist-active{
-    display: block;
-}
-
-.more-song-artist-detail img {
+.search-artist-detail img{
     width: 100%;
+    display: inline-block;
 }
 
 .more-song-artist-song{
     margin: 0;
     padding: 0;
     margin-top: 5px;
-    width: 100%;
+    margin-left: 5px;
+    width: auto;
 }
 
 .more-song-artist-song a{
@@ -1220,9 +1212,10 @@ a.labels {
 }
 
 .more-song-artist-artist{
-    widows: 100%;
+    widows: auto;
     padding: 0;
     margin: 0;
+    margin-left: 5px;
 }
 
 .more-song-artist-artist a{
@@ -1232,7 +1225,8 @@ a.labels {
 }
 
 .more-song-artist-label{
-    width: 100%;
+    width: auto;
+    margin-left: 5px;
 }
 
 .more-song-artist-label a{
@@ -1241,164 +1235,32 @@ a.labels {
     text-decoration: none;
 }
 
-.more-song-artist-pages{
-    width: 100%;
-    padding: 0 15px 0 30px;
-}
-
-.more-song-artist-pages ul{
+.search-artist-title{
     display: inline-block;
+    padding: 0 15px;
+    width: 100%;
+    margin-bottom: 15px;
     position: relative;
-    width: 100%;
-    margin: 0;
-    padding: 0;
 }
 
-.more-song-artist-pages-li {
-    display: inline-block;
-    float: left;
-    border: 0;
-    height: 5px;
-    margin-right: 0.5%;
-    width: 33%;
-    background: #005522;
-    cursor: pointer;
-}
-
-.more-song-artist-pages-li:last-child{
-    margin-right: 0;
-}
-
-.more-song-artist-pages-li-active {
-    background: #fff;
-}
-
-/* end more this from artist */
-
-/* more this from label */
-
-.more-song-label {
-    display: inline-block;
-    margin-top: 40px;
-    width: 100%;
-}
-
-.more-song-label-title {
-    margin: 0 30px 20px 30px;
-    font-size: 150%;
+.search-artist-title span{
     color: #fff;
+    font-size: 110%;
 }
 
-.more-song-label-detail {
-    padding: 0;
-    margin: 0;
-    margin-left: 30px;
-    display: inline-block;
-}
-
-.more-song-label-detail .col-sm-12 {
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-}
-
-.more-song-label-detail .col-sm-2 {
-    padding: 0;
-    padding-right: 10px;
-}
-
-.more-song-label-detail{
-    display: none;
-}
-
-.more-song-label-active{
-    display: block;
-}
-
-.more-song-label-detail img {
-    width: 100%;
-}
-
-.more-song-label-song{
-    margin: 0;
-    padding: 0;
-    margin-top: 5px;
-    width: 100%;
-}
-
-.more-song-label-song a{
-    color: #fff;
-    font-size: 105%;
-    text-decoration: none;
-}
-
-.more-song-label-artist{
-    widows: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.more-song-label-artist a{
-    color: #22ccee;
-    font-size: 80%;
-    text-decoration: none;
-}
-
-.more-song-label-label{
-    width: 100%;
-}
-
-.more-song-label-label a{
+.search-artist-title a{
     color: #888;
-    font-size: 80%;
-    text-decoration: none;
-}
-
-.more-song-label-pages{
-    width: 100%;
-    padding: 0 15px 0 30px;
-}
-
-.more-song-label-pages ul{
     display: inline-block;
-    position: relative;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.more-song-label-pages-li {
-    display: inline-block;
-    float: left;
-    border: 0;
-    height: 5px;
-    margin-right: 0.5%;
-    width: 33%;
-    background: #005522;
-    cursor: pointer;
-}
-
-.more-song-label-pages-li:last-child{
-    margin-right: 0;
-}
-
-.more-song-label-pages-li-active {
-    background: #fff;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 95%;
 }
 
 
-/* start */
 
-.label-genres p{
-    display: inline-block;
-}
-
-.label-genres a{
-    text-decoration: none;
-    color: #eee;
-}
-
-/* end start */
+/* end artist */
 
 
 
