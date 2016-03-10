@@ -23,7 +23,7 @@
 }
 
 body {
-    background: #1d1d1d;
+    background: #000;
     padding: 0;
     margin: 0;
     font-family: cursive;
@@ -57,7 +57,7 @@ header .collapse {
     height: 50px;
 }
 
-#login-button {
+#login-button{
     color: #fff;
     font-size: 15px;
     font-family: cursive;
@@ -70,8 +70,7 @@ header .collapse {
     font-family: cursive;
 }
 
-#login-button:hover,
-#register-button:hover {
+#login-button:hover, #register-button:hover{
     font-size: 20px;
 }
 
@@ -97,13 +96,13 @@ header .collapse {
     border-radius: 10px;
 }
 
-.login-title {
+.login-title{
     width: 100%;
     display: block;
     border-left: 5px solid #ed2552;
 }
 
-#login-form h1 {
+#login-form h1{
     text-align: left;
     border: 0;
     width: 80%;
@@ -111,7 +110,7 @@ header .collapse {
     margin: 0 auto;
 }
 
-.form-element {
+.form-element{
     display: block;
     height: 35px;
     width: 80%;
@@ -122,11 +121,11 @@ header .collapse {
     outline: none;
 }
 
-.form-element::-webkit-input-placeholder {
+.form-element::-webkit-input-placeholder{
     color: #ccc;
 }
 
-.form-element:focus {
+.form-element:focus{
     border-bottom: 2px solid #ed2552;
 }
 
@@ -138,13 +137,13 @@ header .collapse {
     margin: 50px auto 0 auto;
 }
 
-.remember-user {
+.remember-user{
     display: block;
     width: 80%;
     margin: 30px auto 0 auto;
 }
 
-.remember-user label {
+.remember-user label{
     color: #aaa;
     font-size: 90%;
 }
@@ -166,7 +165,7 @@ header .collapse {
     height: 100%;
 }
 
-.button-me:hover {
+.button-me:hover{
     transition: all 0.2s;
     width: 25%;
     height: 150%;
@@ -181,19 +180,18 @@ header .collapse {
     display: inline-block;
 }
 
-#fogotten-password {
+#fogotten-password{
     margin: 30px auto 0 auto;
     text-align: center;
 }
 
-#fogotten-password a {
+#fogotten-password a{
     text-decoration: none;
 }
 
-#fogotten-password a:hover {
+#fogotten-password a:hover{
     color: #0cc;
 }
-
 
 /*_____menu_____*/
 
@@ -203,12 +201,12 @@ header .collapse {
     font-size: 80%;
 }
 
-#menu a {
+#menu a{
     color: #999;
     display: inline-block;
 }
 
-#menu a:hover {
+#menu a:hover{
     color: #555;
 }
 
@@ -297,7 +295,6 @@ header .collapse {
 
 /*_____end menu______*/
 
-
 /* footer */
 
 #footerPage {
@@ -306,9 +303,7 @@ header .collapse {
     margin-bottom: 70px;
 }
 
-#footerPage .col-sm-12,
-.footerPage .col-sm-3,
-.footerPage .col-sm-2 {
+#footerPage .col-sm-12,.footerPage .col-sm-3,.footerPage .col-sm-2{
     padding: 0;
 }
 
@@ -336,13 +331,13 @@ header .collapse {
     margin-bottom: 0.5em;
 }
 
-.magazine-link {
+.magazine-link{
     display: block;
     color: #01b1e6;
     margin-bottom: 0.4em;
 }
 
-.magazine-link:hover {
+.magazine-link:hover{
     color: aqua;
     text-decoration: none;
 }
@@ -369,7 +364,7 @@ header .collapse {
     color: #fff;
 }
 
-.sharing a:hover {
+.sharing a:hover{
     color: #44eeee;
 }
 
@@ -394,14 +389,14 @@ header .collapse {
     font-size: 110%;
 }
 
-.explore-beatport a {
+.explore-beatport a{
     display: block;
     margin-bottom: 10px;
     color: #fff;
     text-decoration: none;
 }
 
-.explore-beatport a:hover {
+.explore-beatport a:hover{
     color: #55ffff;
 }
 
@@ -424,7 +419,7 @@ header .collapse {
     text-decoration: none;
 }
 
-.info-beatport a:hover {
+.info-beatport a:hover{
     color: #55ffff;
 }
 
@@ -446,21 +441,19 @@ header .collapse {
     margin: 0 1em;
 }
 
-.footer-bottom a:hover {
+.footer-bottom a:hover{
     color: #55ffff;
 }
 
-
 /* end footer */
-
 
 /* Audio */
 
-#myTune {
+#myTune{
     display: none;
 }
 
-.tag-playmusic {
+.tag-playmusic{
     height: 70px;
     width: 100%;
     position: fixed;
@@ -470,7 +463,7 @@ header .collapse {
     background: #111;
 }
 
-.playmusic-info {
+.playmusic-info{
     height: 100%;
     display: inline-block;
     vertical-align: top;
@@ -479,7 +472,7 @@ header .collapse {
     margin-right: 1%;
 }
 
-.imgPlayMusic {
+.imgPlayMusic{
     display: inline-block;
     width: 39%;
     float: left;
@@ -489,12 +482,12 @@ header .collapse {
     text-align: right;
 }
 
-.playmusic-info img {
+.playmusic-info img{
     height: 100%;
     display: inline-block;
 }
 
-.playmusic-info .textPlayMusic {
+.playmusic-info .textPlayMusic{
     display: inline-block;
     vertical-align: top;
     margin-top: 10px;
@@ -502,7 +495,7 @@ header .collapse {
     float: left;
 }
 
-.playmusic-info .textPlayMusic a {
+.playmusic-info .textPlayMusic a{
     display: block;
     margin-bottom: 5px;
     overflow: hidden;
@@ -511,15 +504,15 @@ header .collapse {
     color: #44aabb;
 }
 
-.playmusic-info .textPlayMusic a:hover {
+.playmusic-info .textPlayMusic a:hover{
     color: #aacccc;
 }
 
-#playButton .glyphicon-pause {
+#playButton .glyphicon-pause{
     display: none;
 }
 
-.playmusic-time {
+.playmusic-time{
     display: inline-block;
     vertical-align: top;
     height: 100%;
@@ -529,7 +522,7 @@ header .collapse {
     margin-right: 1%;
 }
 
-#playmusic-start {
+#playmusic-start{
     display: inline-block;
     vertical-align: top;
     margin-top: 25px;
@@ -540,9 +533,9 @@ header .collapse {
     text-align: center;
 }
 
-#playmusic-process {
+#playmusic-process{
     height: 5px;
-    border: 1px solid #a00;
+    border:1px solid #a00;
     display: inline-block;
     width: 63%;
     vertical-align: top;
@@ -551,7 +544,7 @@ header .collapse {
     margin-right: 1%;
 }
 
-#playmusic-end {
+#playmusic-end{
     display: inline-block;
     vertical-align: top;
     margin-top: 25px;
@@ -561,19 +554,19 @@ header .collapse {
     text-align: center;
 }
 
-#playmusic-process {
+#playmusic-process{
     cursor: pointer;
 }
 
-#playmusic-process::-webkit-progress-bar {
+#playmusic-process::-webkit-progress-bar{
     background: #eee;
 }
 
-#playmusic-process::-webkit-progress-value {
+#playmusic-process::-webkit-progress-value{
     background: #b00;
 }
 
-.playmusic-button {
+.playmusic-button{
     width: 37%;
     margin: 0;
     display: inline-block;
@@ -581,12 +574,7 @@ header .collapse {
     height: 100%;
 }
 
-#playButton,
-#pauseButton,
-#loopButton,
-#playmusic-prev,
-#playmusic-next,
-#volume {
+#playButton, #pauseButton, #loopButton,#playmusic-prev,#playmusic-next,#volume{
     border: 0;
     font-size: 100%;
     padding: 2px 5px;
@@ -599,15 +587,14 @@ header .collapse {
     text-align: center;
 }
 
-#playmusic-prev,
-#playmusic-next {
+#playmusic-prev,#playmusic-next{
     float: left;
     width: 12%;
     margin-left: 0;
     margin-right: 1%;
 }
 
-#playButton {
+#playButton{
     font-size: 180%;
     color: #fff;
     margin-top: 14px;
@@ -616,14 +603,14 @@ header .collapse {
     float: left;
 }
 
-#loopButton {
+#loopButton{
     float: left;
     width: 12%;
     margin-right: 1%;
     display: inline-block;
 }
 
-#volume {
+#volume{
     margin-top: 0;
     color: #fff;
     font-size: 130%;
@@ -635,24 +622,23 @@ header .collapse {
     text-align: center;
 }
 
-#volumeButton {
+#volumeButton{
     display: inline-block;
     vertical-align: top;
     margin-top: 21px;
     background: transparent;
     width: 29%;
-    border: 0;
+    border : 0;
     float: left;
     margin-right: 1%;
     outline: none;
 }
 
-#volumeButton .glyphicon-volume-down,
-#volumeButton .glyphicon-volume-off {
+#volumeButton .glyphicon-volume-down, #volumeButton .glyphicon-volume-off{
     display: none;
 }
 
-#volumeProBar {
+#volumeProBar{
     height: 4px;
     display: inline-block;
     vertical-align: top;
@@ -663,22 +649,20 @@ header .collapse {
     cursor: pointer;
 }
 
-#volumeProBar:hover {
+#volumeProBar:hover{
     height: 6px;
     margin-top: 32px;
 }
 
-#volumeProBar::-webkit-progress-bar {
+#volumeProBar::-webkit-progress-bar{
     background: #fff;
 }
 
-
 /* End Audio */
-
 
 /* Register Form */
 
-.register-form {
+.register-form{
     color: #eee;
     background: #transparent;
     height: 100%;
@@ -690,7 +674,7 @@ header .collapse {
     display: none;
 }
 
-.extra {
+.extra{
     width: 100%;
     height: 100%;
     position: fixed;
@@ -700,7 +684,7 @@ header .collapse {
     display: none;
 }
 
-.register-form .col-sm-4 {
+.register-form .col-sm-4{
     border-radius: 10px;
     background: #22323A;
     padding-top: 20px;
@@ -711,147 +695,147 @@ header .collapse {
     transform: translateY(-50%);
 }
 
-.register-form h1 {
+.register-form h1{
     text-align: center;
 }
 
-.register-form input {
+.register-form input{
     padding: 8px 10px;
     background: transparent;
     border: 1px solid #448888;
 }
 
-.register-form input::-webkit-input-placeholder {
+.register-form input::-webkit-input-placeholder{
     color: #666 !important;
 }
 
-#register-form-name {
+#register-form-name{
     width: 100%;
     display: block;
     margin-top: 30px;
     border: 0;
 }
 
-#register-firstname {
+#register-firstname{
     display: inline-block;
     width: 45%;
     float: left;
 }
 
-#register-lastname {
+#register-lastname{
     display: inline-block;
     width: 45%;
     float: right;
 }
 
-#register-form-email {
+#register-form-email{
     margin-top: 30px;
     display: inline-block;
     width: 100%;
 }
 
-#register-email {
+#register-email{
     display: inline-block;
     width: 89%;
     float: left;
     margin-right: 1%;
 }
 
-#register-form-email .glyphicon-ok {
+#register-form-email .glyphicon-ok{
     display: none;
     color: #00dd00;
 }
 
-#register-form-email .glyphicon-warning-sign {
+#register-form-email .glyphicon-warning-sign{
     color: #dd0000;
 }
 
-#register-form-email i {
+#register-form-email i{
     display: block;
     float: left;
     width: 10%;
-    text-align: center;
+    text-align:center;
     vertical-align: top;
     margin-top: 10px;
     font-size: 120%;
 }
 
-#register-form-password {
+#register-form-password{
     margin-top: 30px;
     display: inline-block;
     width: 100%;
 }
 
-#register-password {
+#register-password{
     display: inline-block;
     width: 89%;
     float: left;
     margin-right: 1%;
 }
 
-#register-form-password .glyphicon-ok {
+#register-form-password .glyphicon-ok{
     color: #00dd00;
 }
 
-#register-form-password .glyphicon-warning-sign {
+#register-form-password .glyphicon-warning-sign{
     display: none;
     color: #dd0000;
 }
 
-#register-form-password i {
+#register-form-password i{
     display: block;
     float: left;
     width: 10%;
-    text-align: center;
+    text-align:center;
     vertical-align: top;
     margin-top: 10px;
     font-size: 120%;
 }
 
-#register-form-confirm-password {
+#register-form-confirm-password{
     margin-top: 30px;
     display: inline-block;
     width: 100%;
 }
 
-#register-confirm-password {
+#register-confirm-password{
     display: inline-block;
     width: 89%;
     float: left;
     margin-right: 1%;
 }
 
-#register-form-confirm-password .glyphicon-ok {
+#register-form-confirm-password .glyphicon-ok{
     color: #00dd00;
 }
 
-#register-form-confirm-password .glyphicon-warning-sign {
+#register-form-confirm-password .glyphicon-warning-sign{
     display: none;
     color: #dd0000;
 }
 
-#register-form-confirm-password i {
+#register-form-confirm-password i{
     display: inline-block;
     float: left;
     width: 10%;
-    text-align: center;
+    text-align:center;
     vertical-align: top;
     margin-top: 10px;
     font-size: 120%;
 }
 
-#register-form-terms {
+#register-form-terms{
     margin-top: 30px;
 }
 
-#register-form-button {
+#register-form-button{
     margin-top: 30px;
     text-align: center;
     height: 40px;
     color: #000;
 }
 
-#register-form-button button {
+#register-form-button button{
     width: 30%;
     height: 100%;
     display: inline-block;
@@ -860,147 +844,21 @@ header .collapse {
     border: 0;
 }
 
-#register-form-button button:hover {
+#register-form-button button:hover{
     width: 36%;
     transition: all .2s;
     margin: 0;
     height: 120%;
 }
 
-#register-form-button-register {
+#register-form-button-register{
     margin-right: 3%;
 }
 
-#register-form-button-cancel {
+#register-form-button-cancel{
     margin-left: 3%;
 }
-
-
 /* end Register form */
-
-
-/* Content detail */
-
-.content {
-    display: block;
-    width: 100%;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.detail-song-wrap {
-    padding: 0;
-    font-size: 95%;
-}
-
-.detail-song {
-    display: inline-block;
-    width: 100%;
-}
-
-.detail-song-left img {
-    display: inline-block;
-    width: 100%;
-}
-
-.detail-song-nav {
-    font-size: 80%;
-    color: #666;
-    margin: 0;
-}
-
-.detail-song-name {
-    font-size: 200%;
-    color: #fff;
-}
-
-p.artist {
-    display: inline-block;
-    color: #666;
-}
-
-a.artist {
-    color: #fff;
-    margin-left: 5px;
-    text-decoration: none;
-}
-
-p.release-date {
-    color: #555;
-    display: inline-block;
-}
-
-span.release-date {
-    margin-left: 5px;
-    color: #fff;
-}
-
-p.labels {
-    color: #555;
-    display: inline-block;
-}
-
-a.labels {
-    margin-left: 5px;
-    color: #fff;
-    text-decoration: none;
-}
-
-.detail-song-play {
-    padding: 1px 3px;
-    display: inline-block;
-    float: left;
-    border: 0;
-    background: #666;
-    color: #eee;
-}
-
-.detail-song-play .glyphicon-pause {
-    display: none;
-}
-
-.detail-song-play i {
-    margin: 0;
-    font-size: 120%;
-    margin: 3px 5px;
-}
-
-.detail-song-buy {
-    padding: 0;
-    border: 0;
-    background: #ee5380;
-    color: #fff;
-}
-
-.detail-song-buy p {
-    display: inline-block;
-    margin: 0;
-    padding: 3px 15px;
-}
-
-.descrip-title {
-    color: #666;
-}
-
-.detail-song-descrip {}
-
-#descrip-detail {
-    color: #eee;
-}
-
-.detail-song-more {
-    color: #55e;
-    cursor: pointer;
-}
-
-.detail-song-less {
-    color: #55e;
-    display: none;
-    cursor: pointer;
-}
-
-
-/* end content detail */
 
 
 /* track total */
@@ -1171,6 +1029,8 @@ a.labels {
 
 /* end more this from artist */
 
+
+
 /* artist */
 
 .search-artist{
@@ -1183,63 +1043,11 @@ a.labels {
     width: 100%;
 }
 
-.search-artist .col-sm-2{
-    display: inline-block;
-}
-
-.search-artist-detail{
-    display: inline-block;
-    background: #2f2f2f;
-}
-
-.search-artist-detail img{
-    width: 100%;
-    display: inline-block;
-}
-
-.more-song-artist-song{
-    margin: 0;
-    padding: 0;
-    margin-top: 5px;
-    margin-left: 5px;
-    width: auto;
-}
-
-.more-song-artist-song a{
-    color: #fff;
-    font-size: 105%;
-    text-decoration: none;
-}
-
-.more-song-artist-artist{
-    widows: auto;
-    padding: 0;
-    margin: 0;
-    margin-left: 5px;
-}
-
-.more-song-artist-artist a{
-    color: #22ccee;
-    font-size: 80%;
-    text-decoration: none;
-}
-
-.more-song-artist-label{
-    width: auto;
-    margin-left: 5px;
-}
-
-.more-song-artist-label a{
-    color: #888;
-    font-size: 80%;
-    text-decoration: none;
-}
-
 .search-artist-title{
     display: inline-block;
     padding: 0 15px;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     position: relative;
 }
 
@@ -1258,9 +1066,215 @@ a.labels {
     font-size: 95%;
 }
 
+.search-artist .col-sm-2{
+    display: inline-block;
+}
+
+/* down-color */
+.down-color{
+    display: inline-block;
+    background: #2f2f2f;
+    position: relative;
+}
+
+.down-color img{
+    width: 100%;
+    display: inline-block;
+}
+
+.down-color-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    z-index: 2;
+}
+
+.down-color-name{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #555;
+    color: #fff;
+    padding: 2px 5px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.down-color:hover .down-color-link{
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    transition: 0.5s all;
+}
+/* end down-color */
+
 
 
 /* end artist */
+
+.content{
+    margin-bottom: 150px;
+}
+
+/* tracks */
+
+.search-tracks{
+    display: inline-block;
+    width: 100%;
+}
+
+.search-tracks .col-sm-12{
+    display: inline-block;
+    width: 100%;
+}
+
+.search-tracks .col-sm-2{
+    display: inline-block;
+}
+
+.search-tracks-detail{
+    display: inline-block;
+    background: #2f2f2f;
+}
+
+.search-tracks-detail img{
+    width: 100%;
+    display: inline-block;
+}
+
+.search-tracks-song{
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: auto;
+}
+
+.search-tracks-song a{
+    color: #fff;
+    font-size: 105%;
+    text-decoration: none;
+}
+
+.search-tracks-artist{
+    widows: auto;
+    padding: 0;
+    margin: 0;
+    margin-left: 5px;
+}
+
+.search-tracks-artist a{
+    color: #22ccee;
+    font-size: 80%;
+    text-decoration: none;
+}
+
+.search-tracks-label{
+    width: auto;
+    margin-left: 5px;
+}
+
+.search-tracks-label a{
+    color: #888;
+    font-size: 80%;
+    text-decoration: none;
+}
+
+.search-tracks-title{
+    display: inline-block;
+    padding: 0 15px;
+    width: 100%;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.search-tracks-title span{
+    color: #fff;
+    font-size: 110%;
+}
+
+.search-tracks-title a{
+    color: #888;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 95%;
+}
+
+ .search-tracks-viewall{
+
+ }
+
+/* end tracks */
+
+/* label */
+
+.search-label{
+    display: inline-block;
+    width: 100%;
+}
+
+.search-label .col-sm-12{
+    display: inline-block;
+    width: 100%;
+}
+
+.search-label-title{
+    display: inline-block;
+    padding: 0 15px;
+    width: 100%;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.search-label-title span{
+    color: #fff;
+    font-size: 110%;
+}
+
+.search-label-title a{
+    color: #888;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 95%;
+}
+
+.search-label .col-sm-2{
+    display: inline-block;
+}
+
+.search-label-detail{
+    display: inline-block;
+    background: #2f2f2f;
+}
+
+.search-label-detail img{
+    width: 100%;
+    display: inline-block;
+}
+
+ .search-label-name{
+     padding: 2px;
+     opacity: 0.9;
+     color: #fff;
+     margin: 0;
+     padding: 3px 0;
+     text-align: center;
+ }
+
+.search-label-name a{
+    margin: 0;
+    color: #eee;
+}
+
+/* end label */
 
 
 

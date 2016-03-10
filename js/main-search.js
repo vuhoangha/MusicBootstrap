@@ -221,11 +221,13 @@ $(document).ready(function(){
     
     $(".detail-song-track-total li").hover(function(){
         $(this).find(".detail-song-track-total-col-play button").css("color","rgba(255,255,255,1)");
+        $(this).find(".detail-song-track-total-col-play button").css("text-shadow","0px 0px 22px #fff");
         $(this).find(".detail-song-track-total-col-cost button").css("background-color","rgba(240,70,110,1)");
     });
     
     $(".detail-song-track-total li").mouseleave(function(){
         $(this).find(".detail-song-track-total-col-play button").css("color","rgba(255,255,255,0.3)");
+        $(this).find(".detail-song-track-total-col-play button").css("text-shadow","0px 0px 0px #fff");
         $(this).find(".detail-song-track-total-col-cost button").css("background-color","rgba(240,70,110,0.5)");
     });
 
