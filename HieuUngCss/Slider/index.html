@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+
+    <style type="text/css">
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .slider {
+            display: inline-block;
+            width: 100%;
+        }
+        
+        .slider img {
+            display: none;
+            width: 100%;
+        }
+        
+        .slider img:first-child {
+            display: inline-block;
+        }
+        
+        .slider-control {
+            display: inline-block;
+            width: 100%;
+        }
+        
+        .slider-button {
+            height: 5px;
+            display: inline-block;
+            float: left;
+            width: 33%;
+            background: #aaa;
+            margin-right: 0.5%;
+            cursor: pointer;
+        }
+        
+        .slider-button:last-child {
+            margin-right: 0;
+        }
+        
+        .slider-button-active {
+            background: #555;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="slider">
+        <img stt="0" src="./a.jpg" alt="">
+        <img stt="1" src="./b.jpg" alt="">
+        <img stt="2" src="./c.jpg" alt="">
+        <div class="slider-control">
+            <div stt="0" class="slider-button-active slider-button"></div>
+            <div stt="1" class="slider-button"></div>
+            <div stt="2" class="slider-button"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var stt = 0;
+            var firstImg = $(".slider img:first").attr("stt");
+            var endImg = $(".slider img:last").attr("stt");
+            $(".slider img").each(function () {
+                if ($(this).is(':visible')) {
+                    stt = $(this).attr("stt");
+                }
+            });     
+
+            function sliderNext() {
+                stt++;
+                if (stt > endImg) {
+                    stt = firstImg;
+                }
+                $(".slider img").hide();
+                $(".slider img").eq(stt).show();
+                $(".slider-button").removeClass("slider-button-active");
+                $(".slider-button").eq(stt).addClass("slider-button-active");
+            }
+
+            function sliderPrev() {
+                stt--;
+                if (stt < firstImg) {
+                    stt = endImg;
+                }
+                $(".slider img").hide();
+                $(".slider img").eq(stt).show();
+                $(".slider-button").removeClass("slider-button-active");
+                $(".slider-button").eq(stt).addClass("slider-button-active");
+            }
+
+            var interval = setInterval(function () {
+                sliderNext();
+            }, 3000);
+
+            $(".slider img").on("mouseover", function () {
+                clearInterval(intervalSlider);
+            });
+
+            $(".slider-img").on("mouseout", function () {
+                interval = setInterval(function () {
+                    sliderNext();
+                }, 3000);
+            });
+
+            $(".slider-button").on("click", function () {
+                var sttSelect = $(this).attr("stt");
+                $(".slider-button").removeClass('slider-button-active');
+                $(".slider-button").eq(sttSelect).addClass('slider-button-active');
+                $(".slider img").hide();
+                $(".slider img").eq(sttSelect).show();
+                stt = sttSelect;
+            });
+        });
+    </script>
+</body>
+</html>
