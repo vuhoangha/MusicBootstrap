@@ -94,7 +94,7 @@ body {
     margin: 0;
     width: 0;
     height: 0%;
-    background: #fff;
+    background: #000;
     opacity: 0.3;
     transition: 0.5s all;
 }
@@ -116,38 +116,4 @@ body {
 .song-vertical-bottom a{
     text-decoration: none;
 }
-
-.song-vertical-bottom a:hover{
-    text-shadow:  0px 0px 10px #f00;
-}
-
-.song-vertical-name{
-    margin: 0;
-    padding: 3px 0 3px 3px;
-}
-
-.song-vertical-name a{
-    color: #eee;
-}
-
-.song-vertical-artist{
-    margin: 0;
-    padding: 3px 0 3px 3px;
-}
-
-.song-vertical-artist a{
-    color: #22aacc;
-    font-size: 95%;
-}
-
-.song-vertical-label{
-    margin: 0;
-    padding: 3px 0 3px 3px;
-}
-
-.song-vertical-label a{
-    color: #777;
-    font-size: 90%;
-}
-
 

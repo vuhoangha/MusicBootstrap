@@ -1,8 +1,8 @@
 $(document).ready(function () {
     var stt = 0;
-    var firstImg = $(".slider img:first").attr("stt");
-    var endImg = $(".slider img:last").attr("stt");
-    $(".slider img").each(function () {
+    var firstImg = $(".slider-na-img:first").attr("stt");
+    var endImg = $(".slider-na-img:last").attr("stt");
+    $(".slider-na-img").each(function () {
         if ($(this).is(':visible')) {
             stt = $(this).attr("stt");
         }
@@ -13,10 +13,10 @@ $(document).ready(function () {
         if (stt > endImg) {
             stt = firstImg;
         }
-        $(".slider img").hide();
-        $(".slider img").eq(stt).show();
-        $(".slider-button").removeClass("slider-button-active");
-        $(".slider-button").eq(stt).addClass("slider-button-active");
+        $(".slider-na-img").hide();
+        $(".slider-na-img").eq(stt).show();
+        $(".slider-na-button").removeClass("slider-na-button-active");
+        $(".slider-na-button").eq(stt).addClass("slider-na-button-active");
     }
 
     function sliderPrev() {
@@ -24,18 +24,18 @@ $(document).ready(function () {
         if (stt < firstImg) {
             stt = endImg;
         }
-        $(".slider img").hide();
-        $(".slider img").eq(stt).show();
-        $(".slider-button").removeClass("slider-button-active");
-        $(".slider-button").eq(stt).addClass("slider-button-active");
+        $(".slider-na-img").hide();
+        $(".slider-na-img").eq(stt).show();
+        $(".slider-na-button").removeClass("slider-na-button-active");
+        $(".slider-na-button").eq(stt).addClass("slider-na-button-active");
     }
 
-    $(".slider-button").on("click", function () {
+    $(".slider-na-button").on("click", function () {
         var sttSelect = $(this).attr("stt");
-        $(".slider-button").removeClass('slider-button-active');
-        $(".slider-button").eq(sttSelect).addClass('slider-button-active');
-        $(".slider img").hide();
-        $(".slider img").eq(sttSelect).show();
+        $(".slider-na-button").removeClass('slider-na-button-active');
+        $(".slider-na-button").eq(sttSelect).addClass('slider-na-button-active');
+        $(".slider-na-img").hide();
+        $(".slider-na-img").eq(sttSelect).show();
         stt = sttSelect;
     });
 });

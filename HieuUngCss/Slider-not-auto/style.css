@@ -3,26 +3,42 @@ body {
     margin: 0;
 }
 
-.slider {
+.slider-na{
     display: inline-block;
     width: 100%;
 }
 
-.slider img {
+.slider-na-img {
     display: none;
     width: 100%;
 }
 
-.slider img:first-child {
+.slider-na-img img{
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+}
+
+.slider-na-img:first-child{
     display: inline-block;
 }
 
-.slider-control {
+.slider-na-control {
     display: inline-block;
     width: 100%;
 }
 
-.slider-button {
+.slider-2-na-button {
+    height: 5px;
+    display: inline-block;
+    float: left;
+    width: 49.75%;
+    background: #aaa;
+    margin-right: 0.5%;
+    cursor: pointer;
+}
+
+.slider-3-na-button {
     height: 5px;
     display: inline-block;
     float: left;
@@ -32,10 +48,70 @@ body {
     cursor: pointer;
 }
 
-.slider-button:last-child {
+.slider-4-na-button {
+    height: 5px;
+    display: inline-block;
+    float: left;
+    width: 24.625%;
+    background: #aaa;
+    margin-right: 0.5%;
+    cursor: pointer;
+}
+
+.slider-5-na-button {
+    height: 5px;
+    display: inline-block;
+    float: left;
+    width: 19.6%;
+    background: #aaa;
+    margin-right: 0.5%;
+    cursor: pointer;
+}
+
+.slider-6-na-button {
+    height: 5px;
+    display: inline-block;
+    float: left;
+    width: 16.25%;
+    background: #aaa;
+    margin-right: 0.5%;
+    cursor: pointer;
+}
+
+.slider-7-na-button {
+    height: 5px;
+    display: inline-block;
+    float: left;
+    width: 13.857%;
+    background: #aaa;
+    margin-right: 0.5%;
+    cursor: pointer;
+}
+
+.slider-8-na-button {
+    height: 5px;
+    display: inline-block;
+    float: left;
+    width: 12.0625%;
+    background: #aaa;
+    margin-right: 0.5%;
+    cursor: pointer;
+}
+
+.slider-9-na-button {
+    height: 5px;
+    display: inline-block;
+    float: left;
+    width: 10.6666%;
+    background: #aaa;
+    margin-right: 0.5%;
+    cursor: pointer;
+}
+
+.slider-na-button:last-child {
     margin-right: 0;
 }
 
-.slider-button-active {
-    background: #555;
+.slider-na-button-active {
+    background: #151;
 }

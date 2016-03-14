@@ -30,6 +30,10 @@ body {
     font-size: 16px;
 }
 
+
+
+
+/* Header */
 header {
     font-size: 17px;
     border: 0;
@@ -192,9 +196,12 @@ header .collapse {
 #fogotten-password a:hover{
     color: #0cc;
 }
+/* End Header */
+
+
+
 
 /*_____menu_____*/
-
 #menu {
     color: #eee;
     background: #151515;
@@ -291,9 +298,9 @@ header .collapse {
     border-bottom: 1px solid #aa1111;
     color: #dd55dd;
 }
-
-
 /*_____end menu______*/
+
+
 
 /* footer */
 
@@ -444,11 +451,11 @@ header .collapse {
 .footer-bottom a:hover{
     color: #55ffff;
 }
-
 /* end footer */
 
-/* Audio */
 
+
+/* Audio */
 #myTune{
     display: none;
 }
@@ -657,8 +664,9 @@ header .collapse {
 #volumeProBar::-webkit-progress-bar{
     background: #fff;
 }
-
 /* End Audio */
+
+
 
 /* Register Form */
 
@@ -861,10 +869,7 @@ header .collapse {
 /* end Register form */
 
 
-
-
-/* slider */
-
+/* Slider */
 body{
     padding: 0;
     margin: 0;
@@ -875,12 +880,18 @@ body{
     width: 100%;
 }
 
-.slider img{
+.slider-img{
     display: none;
     width: 100%;
 }
 
-.slider img:first-child{
+.slider-img img{
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+}
+
+.slider-img:first-child{
     display: inline-block;
 }
 
@@ -889,11 +900,81 @@ body{
     width: 100%;
 }
 
-.slider-button{
+.slider-2-button{
+    height: 5px;
+    display: inline-block;
+    float: left;
+    width: 49.75%;
+    background: #aaa;
+    margin-right: 0.5%;
+    cursor: pointer;
+}
+
+.slider-3-button{
     height: 5px;
     display: inline-block;
     float: left;
     width: 33%;
+    background: #aaa;
+    margin-right: 0.5%;
+    cursor: pointer;
+}
+
+.slider-4-button{
+    height: 5px;
+    display: inline-block;
+    float: left;
+    width: 24.625%;
+    background: #aaa;
+    margin-right: 0.5%;
+    cursor: pointer;
+}
+
+.slider-5-button{
+    height: 5px;
+    display: inline-block;
+    float: left;
+    width: 19.6%;
+    background: #aaa;
+    margin-right: 0.5%;
+    cursor: pointer;
+}
+
+.slider-6-button{
+    height: 5px;
+    display: inline-block;
+    float: left;
+    width: 16.25%;
+    background: #aaa;
+    margin-right: 0.5%;
+    cursor: pointer;
+}
+
+.slider-7-button{
+    height: 5px;
+    display: inline-block;
+    float: left;
+    width: 13.857%;
+    background: #aaa;
+    margin-right: 0.5%;
+    cursor: pointer;
+}
+
+.slider-8-button{
+    height: 5px;
+    display: inline-block;
+    float: left;
+    width: 12.0625%;
+    background: #aaa;
+    margin-right: 0.5%;
+    cursor: pointer;
+}
+
+.slider-9-button{
+    height: 5px;
+    display: inline-block;
+    float: left;
+    width: 10.6666%;
     background: #aaa;
     margin-right: 0.5%;
     cursor: pointer;
@@ -904,14 +985,13 @@ body{
 }
 
 .slider-button-active{
-    background: #555;
+    background: #171;
 }
+/* End Slider */
 
-/* END  slider */
 
 
 /* Slider not auto */
-
 body {
     padding: 0;
     margin: 0;
@@ -922,12 +1002,18 @@ body {
     width: 100%;
 }
 
-.slider-na img {
+.slider-na-img {
     display: none;
     width: 100%;
 }
 
-.slider-na img:first-child {
+.slider-na-img img{
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+}
+
+.slider-na-img:first-child{
     display: inline-block;
 }
 
@@ -936,11 +1022,81 @@ body {
     width: 100%;
 }
 
-.slider-na-button {
+.slider-2-na-button {
+    height: 5px;
+    display: inline-block;
+    float: left;
+    width: 49.75%;
+    background: #aaa;
+    margin-right: 0.5%;
+    cursor: pointer;
+}
+
+.slider-3-na-button {
     height: 5px;
     display: inline-block;
     float: left;
     width: 33%;
+    background: #aaa;
+    margin-right: 0.5%;
+    cursor: pointer;
+}
+
+.slider-4-na-button {
+    height: 5px;
+    display: inline-block;
+    float: left;
+    width: 24.625%;
+    background: #aaa;
+    margin-right: 0.5%;
+    cursor: pointer;
+}
+
+.slider-5-na-button {
+    height: 5px;
+    display: inline-block;
+    float: left;
+    width: 19.6%;
+    background: #aaa;
+    margin-right: 0.5%;
+    cursor: pointer;
+}
+
+.slider-6-na-button {
+    height: 5px;
+    display: inline-block;
+    float: left;
+    width: 16.25%;
+    background: #aaa;
+    margin-right: 0.5%;
+    cursor: pointer;
+}
+
+.slider-7-na-button {
+    height: 5px;
+    display: inline-block;
+    float: left;
+    width: 13.857%;
+    background: #aaa;
+    margin-right: 0.5%;
+    cursor: pointer;
+}
+
+.slider-8-na-button {
+    height: 5px;
+    display: inline-block;
+    float: left;
+    width: 12.0625%;
+    background: #aaa;
+    margin-right: 0.5%;
+    cursor: pointer;
+}
+
+.slider-9-na-button {
+    height: 5px;
+    display: inline-block;
+    float: left;
+    width: 10.6666%;
     background: #aaa;
     margin-right: 0.5%;
     cursor: pointer;
@@ -951,21 +1107,13 @@ body {
 }
 
 .slider-na-button-active {
-    background: #555;
+    background: #151;
 }
+/* End Slider not auto  */
 
-/* END slider not auto */
 
 
-/* Song horizontal */
-
-body {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    font-family: cursive;
-}
-
+/* Song Horizontal */
 .song-horizontal {
     display: inline-block;
     width: 25%;
@@ -1127,6 +1275,7 @@ body {
     background: #ee32a0;
     font-family: cursive;
     transition: .5s all;
+    font-weight: bold;
 }
 
 .song-horizontal:hover .song-horizontal-left span{
@@ -1143,48 +1292,14 @@ body {
 .song-horizontal:hover .song-horizontal-right button{
     width: 60px;
 }
-
-/* effect text */
-
-.name-level-1{
-    color: #eee;
-}
-.name-level-1:hover{
-    color: #eee;
-    text-shadow: 0 0 15px #f00;
-}
-.name-level-2{
-    color: #22bbcc;
-}
-.name-level-2:hover{
-    color: #22bbcc;
-    text-shadow: 0 0 15px #f00;
-}
-.name-level-3{
-    color: #777;
-}
-.name-level-3:hover{
-    color: #777;
-    text-shadow: 0 0 15px #f00;
-}
+/* End Horizontal  */
 
 
-/* END Song horizontal */
 
-
-/*  Song Vertical  */
-
-body {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    font-family: cursive;
-}
-
-
+/* Song Vertical */
 .song-vertical {
     display: inline-block;
-    width: 20%;
+    width: 100%;
     padding: 0;
     margin: 0;
     background: #333;
@@ -1270,7 +1385,7 @@ body {
     margin: 0;
     width: 0;
     height: 0%;
-    background: #fff;
+    background: #000;
     opacity: 0.3;
     transition: 0.5s all;
 }
@@ -1292,57 +1407,14 @@ body {
 .song-vertical-bottom a{
     text-decoration: none;
 }
-
-.song-vertical-bottom a:hover{
-    text-shadow:  0px 0px 10px #f00;
-}
-
-.song-vertical-name{
-    margin: 0;
-    padding: 3px 0 3px 3px;
-}
-
-.song-vertical-name a{
-    color: #eee;
-}
-
-.song-vertical-artist{
-    margin: 0;
-    padding: 3px 0 3px 3px;
-}
-
-.song-vertical-artist a{
-    color: #22aacc;
-    font-size: 95%;
-}
-
-.song-vertical-label{
-    margin: 0;
-    padding: 3px 0 3px 3px;
-}
-
-.song-vertical-label a{
-    color: #777;
-    font-size: 90%;
-}
-
-
 /* End Song Vertical */
 
 
-/* String in IMG */
 
-body {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    font-family: cursive;
-    display: inline-block;
-}
-
+/* String in Img */
 .string-in-img{
     display: inline-block;
-    width: 20%;
+    width: 100%;
     position: relative;
     box-sizing: border-box;
     -moz-box-sizing:border-box;
@@ -1459,7 +1531,6 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    color: #fff;
     background: #000;
     margin: 0;
     box-sizing: border-box;
@@ -1467,6 +1538,8 @@ body {
     height: 30px;
     line-height: 30px;
     text-align: center;
+    font-size: 110%;
+    font-weight: bold;
 }
 
 #string-name-right{
@@ -1476,4 +1549,48 @@ body {
     overflow: hidden;
 }
 
-/*  END String in IMG */
+#string-name-right:hover{
+    text-shadow:0 0 15px #f00;
+}
+/* END String in Img */
+
+
+
+
+/* name song , artist and label */
+
+.wrap-name-level{
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 2px 3px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.name-level-1{
+    color: #eee;
+    font-size: 105%;
+}
+.name-level-1:hover{
+    color: #eee;
+    text-shadow: 0 0 15px #f00;
+}
+.name-level-2{
+    color: #22bbcc;
+    font-size: 100%;
+}
+.name-level-2:hover{
+    color: #22bbcc;
+    text-shadow: 0 0 15px #f00;
+}
+.name-level-3{
+    color: #777;
+    font-size: 95%;
+}
+.name-level-3:hover{
+    color: #777;
+    text-shadow: 0 0 15px #f00;
+}
+/* name song , artist and label */

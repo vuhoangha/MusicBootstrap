@@ -166,6 +166,7 @@ body {
     background: #ee32a0;
     font-family: cursive;
     transition: .5s all;
+    font-weight: bold;
 }
 
 .song-horizontal:hover .song-horizontal-left span{
@@ -182,6 +183,7 @@ body {
 .song-horizontal:hover .song-horizontal-right button{
     width: 60px;
 }
+
 
 
 
