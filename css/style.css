@@ -369,7 +369,7 @@ header .collapse {
 /* top-6-dj */
 
 .top-6-dj {
-    padding: 25px 0 20px 0;
+    padding: 35px 0 20px 0;
 }
 
 .top-6-dj-title {
@@ -593,7 +593,7 @@ header .collapse {
 /* new-track */
 
 .new-tracks{
-    margin-top: 2em;
+    margin-top: 40px;
     border-top: 1px solid #333;
 }
 
@@ -798,7 +798,7 @@ header .collapse {
 /* hot-remix */
 
 .hot-remix {
-    margin-top: 2em;
+    margin-top: 40px;
     border-top: 1px solid #333;
 }
 
@@ -1012,7 +1012,7 @@ header .collapse {
 /* live-set */
 
 .live-set {
-    margin-top: 2em;
+    margin-top: 40px;
     border-top: 1px solid #333;
 }
 

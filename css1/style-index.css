@@ -18,17 +18,18 @@
 /* top-6-dj */
 
 .top-6-dj {
-    padding: 25px 0 20px 0;
+    padding: 45px 0 0px 0;
 }
 
 .top-6-dj-title {
-    color: #fff;
+    color: #afee10;
     font-size: 150%;
 }
 
 .top-6-dj-content .slider-na-img ul {
     display: inline-block;
     padding: 0;
+    margin: 0;
     width: 100%;
     position: relative;
 }
@@ -36,8 +37,9 @@
 .top-6-dj-content .slider-na-img li {
     display: inline-block;
     float: left;
+    padding: 0;
+    margin: 0;
     margin-right: 1%;
-    margin-bottom: 10px;
     width: 32.6667%;
     background: #333;
 }
@@ -52,14 +54,15 @@
 /* new-track */
 
 .new-tracks{
-    margin-top: 2em;
-    border-top: 1px solid #333;
+    margin-top: 30px;
+    border-top: 1px dashed #333;
 }
 
 .new-tracks-title {
-    color: #fff;
+    color: #afee10;
     font-size: 140%;
-    margin-top: 1em;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .new-track-div {
@@ -113,10 +116,8 @@
 }
 
 .new-tracks-pages-li-active {
-    background: #fff;
+    background: #aaa;
 }
-
-
 /* end new-track */
 
 
@@ -125,18 +126,20 @@
 /* hot-remix */
 
 .hot-remix {
-    margin-top: 2em;
-    border-top: 1px solid #333;
+    margin-top: 40px;
+    border-top: 1px dashed #333;
 }
 
 .hot-remix-title {
-    color: #fff;
+    color: #afee10;
     font-size: 140%;
-    margin-top: 1em;
+    margin-top: 30px;
+    margin-bottom: 25px;
 }
 
 .hot-remix-div {
     display: none;
+    width: 100%;
 }
 
 .hot-remix-div-active {
@@ -177,7 +180,7 @@
     height: 5px;
     margin-right: 0.5%;
     width: 33%;
-    background: #005522;
+    background: #151;
     cursor: pointer;
 }
 
@@ -186,16 +189,19 @@
 }
 
 .hot-remix-pages-li-active {
-    background: #fff;
+    background: #aaa;
 }
 
 /* end hot-remix */
 
+
+
+
 /* live-set */
 
 .live-set {
-    margin-top: 2em;
-    border-top: 1px solid #333;
+    margin-top: 40px;
+    border-top: 1px dashed #333;
 }
 
 .live-set-content {
@@ -203,9 +209,10 @@
 }
 
 .live-set-title {
-    color: #fff;
+    color: #afee10;
     font-size: 140%;
-    margin-top: 1em;
+    margin-top: 35px;
+    margin-bottom: 30px;
 }
 
 .live-set-content {
@@ -244,7 +251,7 @@
 .live-set-slider {
     padding: 0;
     width: 100%;
-    display: block;
+    display: inline-block;
     position: relative;
 }
 
@@ -269,6 +276,49 @@
 
 
 /* end live-set */
+
+
+
+/* new-track */
+
+.new-demo{
+    margin-top: 40px;
+    border-top: 1px dashed #333;
+}
+
+.new-demo-title {
+    color: #afee10;
+    font-size: 140%;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.new-demo-div {
+    display: inline-block;
+}
+
+.new-demo-div-ul {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 0.5em;
+    padding: 0;
+    position: relative;
+}
+
+.new-demo-div-ul li {
+    display: inline-block;
+    width: 24.625%;
+    background: #373737;
+    float: left;
+    margin-right: 0.5%;
+}
+
+.new-demo-div-ul li:last-child{
+    margin-right: 0;
+}
+/* end new-track */
+
+
 
 
 /* top-ten */
@@ -545,6 +595,10 @@
     border-bottom: 2px solid #444;
     font-size: 150%;
     color: #afee10;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .top-ten-demo ul {
@@ -605,24 +659,34 @@
 }
 
 .top-ten-demo a:hover{
-    color: #afee10;
+    text-shadow: 0 0 15px #f00;
 }
 
 .top-ten-demo-name {
     font-size: 130%;
-    color: #fff;
+    color: #eee;
+}
+
+.top-ten-demo-name:hover{
+    color: #eee;
 }
 
 .top-ten-demo-artist {
     font-size: 100%;
     color: #22bbcc;
-    
-        margin: 5px 0;
+    margin: 5px 0;
+}
 
+.top-ten-demo-artist:hover{
+    color: #22bbcc;
 }
 
 .top-ten-demo-label {
     font-size: 95%;
+    color: #888;
+}
+
+.top-ten-demo-label:hover{
     color: #888;
 }
 

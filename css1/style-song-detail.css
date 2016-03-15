@@ -1,0 +1,122 @@
+
+/* Content detail */
+
+.content {
+    display: block;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.detail-song-wrap {
+    padding: 0;
+    font-size: 95%;
+}
+
+.detail-song {
+    display: inline-block;
+    width: 100%;
+}
+
+.detail-song-left img {
+    display: inline-block;
+    width: 100%;
+}
+
+.detail-song-nav {
+    font-size: 80%;
+    color: #666;
+    margin: 0;
+}
+
+.detail-song-name {
+    font-size: 200%;
+    color: #fff;
+}
+
+p.artist {
+    display: inline-block;
+    color: #666;
+}
+
+a.artist {
+    color: #fff;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+p.release-date {
+    color: #555;
+    display: inline-block;
+}
+
+span.release-date {
+    margin-left: 5px;
+    color: #fff;
+}
+
+p.labels {
+    color: #555;
+    display: inline-block;
+}
+
+a.labels {
+    margin-left: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.detail-song-play-buy{
+    display: inline-block;
+    height: 30px;
+}
+
+.detail-song-play {
+    height: 100%;
+    width: 30px;
+    display: inline-block;
+    float: left;
+    border: 0;
+    background: #666;
+    color: #eee;
+}
+
+.detail-song-play i {
+    margin: 0;
+    font-size: 120%;
+}
+
+.detail-song-buy {
+    height: 100%;
+    width: 70px;
+    display: inline-block;
+    float: left;
+    padding: 0;
+    border: 0;
+    background: #ee5380;
+    color: #fff;
+}
+
+.detail-song-buy p {
+    display: inline-block;
+    margin: 0;
+}
+
+.descrip-title {
+    color: #666;
+}
+
+#short-text-content{
+    color: #eee;
+}
+
+/* end content detail */
+
+
+/* detail song all track */
+.detail-song-all-track{
+    padding: 30px;
+    margin-top: 50px;
+    box-sizing:border-box;
+}
+/* end detail song all track */
