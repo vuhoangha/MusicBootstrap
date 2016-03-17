@@ -31,7 +31,7 @@ $(document).ready(function () {
             $(this).css("background", "transparent");
             displaygenres = 0;
         }
-    })
+    });
 });
 
 // end genres

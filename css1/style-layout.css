@@ -1666,6 +1666,10 @@ body{
     white-space: nowrap;
 }
 
+.all-track-buy{
+    padding-right: 0;
+}
+
 .all-track-name, .all-track-artist, .all-track-remixer{
     display: inline-block;
     float: left;
